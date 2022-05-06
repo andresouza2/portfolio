@@ -67,18 +67,18 @@ const Main = () => {
           />
         </div>
         <div className="btn_download">
-              <span>
-                <FaFileDownload />
-              </span>
-              <button>
-                <a
-                  href={`${curriculo}`}
-                  download="cv-andre.pdf"
-                >
-                  Baixe meu Curriculo
-                </a>
-              </button>
-            </div>
+          <span>
+            <FaFileDownload />
+          </span>
+          <C.Button>
+            <a
+              href={`${curriculo}`}
+              download="cv-andre.pdf"
+            >
+              Baixe meu Curriculo
+            </a>
+          </C.Button>
+        </div>
 
 
         <h2>Projetos</h2>
