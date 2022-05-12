@@ -6,35 +6,7 @@ export const Main = styled.main`
     width: calc(100% - 50px);
     margin: 0 auto;
 
-    .imgPrincipal {
-      width: 100%;
-      height: 80vh;
-      margin: 0 auto;
-      display: flex;
-
-      img {
-        width: 50%;
-      }
-
-      .download {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        justify-content: space-between;
-        margin: 50px auto;
-      }
-
-      h2 {
-        text-align: center;
-      }
-
-      p {
-        text-align: justify;
-      }
-    }
-
-    h1, h2 {
+    h2 {
       text-align: center;
       margin-bottom: 2.5em;
     }
@@ -47,21 +19,69 @@ export const Main = styled.main`
       align-items: center;
       justify-content: space-between;
     }
+  }
+`;
 
-    .btn_download {
-      width: 100%;
+export const Hero = styled.div`
+  width: 80%;
+  height: 50vh;
+  display: flex;
+  margin: 2.5em auto;
+
+  img {
+    width: 50%;
+    margin: 0 1em;
+  }
+
+  .containerSobreMim {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+      font-size: 2em;
+    }
+
+    .sobreMim {
+      width: 80%;
+      height: 100%;
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      justify-content: space-around;
+      text-align: center;
 
-      span svg {
-      font-size: 5em;
-      margin: 10px auto;
+      h2 {
+        font-size: 2em;
+      }
+
+      p {
+        margin: 0 2em;
+        text-indent: 4em;
+        text-align: justify;
+        font-size: 1.05em;
+      }
+
+      button {
+        width: 200px;
+        height: 45px;
+        margin: 0 auto;
+        background-color: ${props => props.theme.colors.button};
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+
+        a {
+          text-decoration: none;
+          color: #fff;
+          font-size: 1.2em;
+          font-family: 'Roboto Slab', sans-serif;
+        }
       }
     }
   }
-
 `;
 
 export const Button = styled.button`
@@ -73,10 +93,19 @@ export const Button = styled.button`
   border-radius: 8px;
   cursor: pointer;
 
-  & a {
+  a {
     text-decoration: none;
     color: #fff;
     font-size: 1.2em;
     font-family: 'Roboto Slab', sans-serif;
   }
+`;
+
+export const Download = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 2.5em;
 `;
