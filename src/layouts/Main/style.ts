@@ -129,7 +129,7 @@ export const Hero = styled.div`
 
 export const Sobre = styled.div`
   width: 100%;
-  margin: 0 auto;
+  margin: 50px auto 80px;
 
   & p {
     font-family: 'Roboto';
@@ -149,6 +149,11 @@ export const Sobre = styled.div`
 `;
 
 export const Projetos = styled.div`
+
+  h2 {
+    margin: 60px auto;
+  }
+
   .container__card {
     width: 100%;
     height: auto;
