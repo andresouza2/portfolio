@@ -2,6 +2,7 @@ import { colors } from './../../style/variables';
 import styled from "styled-components";
 
 export const Main = styled.main`
+  max-width: 1020px;
   width: calc(100% - 250px);
   margin: 0 auto;
 
@@ -34,6 +35,7 @@ export const Hero = styled.div`
   margin: 0 auto;
 
   .hero {
+    max-width: 1020px;
     width: calc(100% - 250px);
     display: flex;
     margin: 0 auto;
@@ -55,8 +57,8 @@ export const Hero = styled.div`
         margin: 0 auto;
 
         & h1 {
-          font-size: 60px;
-          text-align: justify;
+          font-size: 65px;
+          text-align: left;
           color: ${props => props.theme.colors.amarelo};
           margin-top: 50px;
           margin-bottom: 10px;
