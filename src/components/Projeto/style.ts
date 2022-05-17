@@ -3,26 +3,14 @@ import styled from "styled-components";
 export const Container = styled.div`
   width: 50%;
 
-  button {
-    width: 150px;
-    height: 45px;
-    border: none;
-    border-radius: 8px;
-    background-color: #00d76e;
-    color: #fcfcfc;
-    margin: 10px 20px 0;
-    cursor: pointer;
-  }
-
   .card {
     width: auto;
-    height: 210px;
-    margin: 20px 20px 0;
+    height: 100%;
+    margin: 0 20px 20px;
     border: none;
     border-radius: 8px;
     overflow: hidden;
     position: relative;
-
 
     img {
       width: 100%;
@@ -55,8 +43,10 @@ export const Container = styled.div`
       font-weight: 700;
       font-size: 1.5em;
     }
-
-
   }
 
+@media screen and (max-width: 425px) {
+  width: calc(100% - 5px);
+  margin: 0 auto;
+}
 `;

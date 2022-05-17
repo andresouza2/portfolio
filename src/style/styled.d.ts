@@ -1,4 +1,7 @@
 import 'styled-components';
+//import dark from '../style/themes/dark'
+
+// type theme = typeof dark
 
 declare module 'styled-components' {
   export interface DefaultTheme {
@@ -8,6 +11,11 @@ declare module 'styled-components' {
       background: string;
       text: string;
       button: string;
+      borderBG: string;
+      amarelo?: string;
+      branco: string;
+      preto: string;
     },
   }
+  //export interface defaultTheme extends theme { }
 }
