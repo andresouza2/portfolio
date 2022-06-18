@@ -10,6 +10,7 @@ import Login from "@assets/login-front.jpg";
 import TodoList from "@assets/todo-list.jpg";
 import Programming from "@assets/program.svg";
 import curriculo from "@assets/download/cv-andre.pdf";
+import Calculadora from "@assets/calculadora.jpg";
 import {
   FaHtml5,
   FaCss3,
@@ -52,6 +53,12 @@ const Main = () => {
       name: "Lista de Tarefas",
       link: "https://github.com/andresouza2/todo-list",
       img: `${TodoList}`,
+    },
+    {
+      id: 5,
+      name: "Calculadora",
+      link: "https://github.com/andresouza2/calculadora-react-typescript",
+      img: `${Calculadora}`,
     },
   ]);
   return (
