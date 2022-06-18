@@ -156,7 +156,6 @@ export const Projetos = styled.div`
 
   .container__card {
     width: 100%;
-    height: auto;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
