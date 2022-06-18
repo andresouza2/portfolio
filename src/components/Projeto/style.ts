@@ -4,7 +4,7 @@ export const Container = styled.div`
   width: 50%;
 
   .card {
-    width: auto;
+    width: 90%;
     height: 100%;
     margin: 0 20px 20px;
     border: none;
@@ -13,7 +13,7 @@ export const Container = styled.div`
     position: relative;
 
     img {
-      width: 400px;
+      width: 100%;
       height: 250px;
       opacity: 0.5;
       transition: transform .5s ease;
