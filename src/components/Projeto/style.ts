@@ -45,8 +45,19 @@ export const Container = styled.div`
     }
   }
 
-@media screen and (max-width: 425px) {
+@media screen and (min-width: 320px) and (max-width: 425px) {
   width: calc(100% - 5px);
-  margin: 0 auto;
+  height: 10em;
+  margin: 10px auto;
+
+  .card {
+    img {
+      width: 100%;
+      height: 100%;
+      opacity: 0.5;
+      transition: transform .5s ease;
+    }
+  }
+
 }
 `;
