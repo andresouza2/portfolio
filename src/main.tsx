@@ -1,17 +1,13 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
-import { ThemeProvider } from 'styled-components'
-import App from './App'
-import { GlobalStyle } from './style/globalStyles'
-import dark from './style/themes/dark'
-import light from './style/themes/light'
+import ReactDOM from 'react-dom/client'
+import App from './App.tsx'
+import './index.css'
+import { ThemeProvider } from './context/ThemeContext.tsx'
 
-ReactDOM.render(
+ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <ThemeProvider theme={dark ? dark : light}>
+    <ThemeProvider>
       <App />
-      <GlobalStyle />
     </ThemeProvider>
   </React.StrictMode>,
-  document.getElementById('root')
 )
