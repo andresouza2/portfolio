@@ -1,4 +1,4 @@
-import CardImg from '../../../../assets/imgs/card-img.svg'
+// import CardImg from '../../../../assets/imgs/card-img.svg'
 import { Button } from '../../../../components/Button'
 import { twMerge } from 'tailwind-merge'
 
@@ -15,7 +15,7 @@ export const Card = ({ img, title, body, handleClick, className }: CardProps) =>
     <div
       className={twMerge('w-full overflow-hidden rounded-lg bg-gray-200 drop-shadow-md dark:bg-gray-900/45', className)}
     >
-      <img src={img ?? CardImg} alt="imagem de card" className="max-h-[149px] w-full rounded-t-lg object-cover" />
+      {/* <img src={img ?? CardImg} alt="imagem de card" className="max-h-[149px] w-full rounded-t-lg object-cover" /> */}
 
       <div className="p-4">
         <p className="mb-2 text-sm font-medium text-gray-800 dark:text-gray-300">{title}</p>
