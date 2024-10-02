@@ -21,8 +21,6 @@ export const Projects = () => {
     allProjects()
   }, [allProjects])
 
-  if (project) console.log(project)
-
   return (
     <div className="mt-32">
       <h2 className="mb-11 text-center text-[2rem] font-normal">Projetos</h2>

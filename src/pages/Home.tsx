@@ -2,6 +2,20 @@ import DevImg from '../assets/imgs/image-dev.svg'
 import { Button } from '../components/Button'
 
 export const Home = () => {
+  const URL_PDF_FILE: string = 'http://localhost:3000/cv_andre.pdf'
+  
+  function downloadFile(url: string) {
+    const fileName = url.split("/").pop() ?? "";
+    console.log(fileName)
+    const aTag = document.createElement("a");
+    aTag.href = url;
+    aTag.setAttribute("target", "_blank");
+    aTag.setAttribute("donwload", fileName);
+    document.body.appendChild(aTag);
+    aTag.click();
+    aTag.remove();
+  }
+
   return (
     <div className="mt-32 flex flex-row justify-center md:justify-between">
       <div className="flex flex-col items-start justify-between">
@@ -11,8 +25,10 @@ export const Home = () => {
           <p className="text-[1.5rem] font-light">Desenvolvedor Front-End e Back-end</p>
         </div>
 
-        <Button name="baixarCV" className="mt-0" handleClick={() => {}}>
-          Baixe o meu currículo
+        <Button name="baixarCV" className="mt-0" handleClick={() => {
+          downloadFile(URL_PDF_FILE)
+        }}>
+        Baixe o meu currículo
         </Button>
       </div>
 
