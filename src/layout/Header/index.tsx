@@ -28,7 +28,7 @@ export const Header = () => {
   return (
     <div className="flex items-center justify-end py-6">
       {linkItems.map((link) => (
-        <LinkItem key={link.name} name={link.name} path={link.path} />
+        <LinkItem key={link.name} name={link.name} path={link.path} className="hidden md:block" />
       ))}
       <SunIcon className="h-6 w-6 fill-gray-950 dark:fill-gray-200" />
       <ToggleSwitch handleToggle={toggleTheme} isChecked={theme === 'dark'} />
